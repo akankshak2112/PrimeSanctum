@@ -1,0 +1,47 @@
+@import "../../responsive.scss";
+
+//THIS IS TO HIDE THE SCROLL BAR BUT KEEP THE FUNCTIONALITY
+
+*{
+    -ms-overflow-style: none;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.layout{
+
+
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    display: flex;
+   flex-direction: column;
+   background-color: #606060FF;
+
+
+    @include lg{
+        max-width: 1280px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @include md{
+        max-width: 768px;
+    }
+
+    @include sm{
+        max-width: 640px;
+    }
+    .content{
+       // flex: 1;
+        height: calc(100vh - 100px);
+    }
+
+    
+
+  
+}
